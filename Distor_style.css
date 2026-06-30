@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #222;
+    background: #f4f7fb;
+}
+
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+header {
+    background: #20680a;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 8px 0;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    text-align: center;
+}
+
+header > * {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+header p {
+    text-align: center;
+}
+
+main {
+    margin-top: 205px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #d7ecff;
+    margin-right: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section,
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.profile-image {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 16px auto 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+ul {
+    margin-top: 0;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+    max-width: 520px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c9d7e6;
+    border-radius: 8px;
+    font: inherit;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #20680a;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+#formMessage {
+    min-height: 1.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: #555;
+}
+
+@media (max-width: 640px) {
+    main,
+    footer {
+        padding: 16px;
+    }
+
+    header {
+        padding: 6px 0;
+    }
+
+    header > * {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    main {
+        margin-top: 180px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px 10px 0 0;
+    }
+}

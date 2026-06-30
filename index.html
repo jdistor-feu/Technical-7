@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distor - Personal Portfolio</title>
+    <link rel="stylesheet" href="Distor_style.css">
+</head>
+<body>
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <h2>Joseph Gabriel Distor</h2>
+        <p>BS Cybersecurity Student</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2 id="greetingText">Hello, welcome to my portfolio</h2>
+            <p>
+                This website shows my background, skills, projects, and contact details.
+            </p>
+            <img src="IMG_2389.jpg" alt="Joseph Gabriel Distor" class="profile-image">
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <article class="card">
+                <p>
+                    I am a BS Cybersecurity student who enjoys learning web design and client-side scripting.
+                </p>
+                <button type="button" id="bioToggle">Show More About Me</button>
+                <div id="aboutExtras" class="hidden">
+                    <p>
+                        I like creating simple webpages and improving them step by step. My goal is to make clean and useful pages.
+                    </p>
+                    <p class="quote">
+                        "Change is an unavoidable law of life, while progress is the intentional result of choosing to grow, adapt, and evolve."
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <article class="card">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Basic cybersecurity knowledge</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Attention to detail</li>
+                    <li>Problem solving</li>
+                    <li>Adaptability</li>
+                    <li>Willingness to learn</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="card">
+                    <h3>Specialized Student Portfolio</h3>
+                    <p>A simple webpage that introduces my background, course, and interests.</p>
+                </article>
+                <article class="card">
+                    <h3>Simple To Do List</h3>
+                    <p>A basic to do list project that helps practice adding, viewing, and organizing tasks.</p>
+                </article>
+                <article class="card">
+                    <h3>Cart Order Form</h3>
+                    <p>A simple order form that shows product details, quantity, and total order information.</p>
+                </article>
+                <article class="card">
+                    <h3>Contact Form</h3>
+                    <p>A form with validation used for sending questions, comments, or feedback.</p>
+                </article>
+                <article class="card">
+                    <h3>HTML Practice Pages</h3>
+                    <p>A collection of class exercises that help improve my web development skills.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Form</h2>
+            <form id="contactForm" novalidate>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Your full name">
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="name@example.com">
+
+                <label for="subject">Subject</label>
+                <input id="subject" type="text" placeholder="Portfolio feedback">
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message here"></textarea>
+
+                <button type="submit">Send Message</button>
+                <p id="formMessage"></p>
+            </form>
+
+            <article class="card">
+                <p>You can also reach me through email:</p>
+                <p><a href="mailto:jdistor@fit.edu.ph">jdistor@fit.edu.ph</a></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 J Distor. TQ01 - CYBR003L.</p>
+    </footer>
+
+    <script src="Distor_script.js"></script>
+</body>
+</html>
